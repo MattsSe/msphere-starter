@@ -1,0 +1,4 @@
+node_modules
+jdeploy-bundle
+*.jar
+package-lock.json

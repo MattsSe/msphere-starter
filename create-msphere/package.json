@@ -1,0 +1,26 @@
+{
+  "bin": {
+    "npm-deploy": "jdeploy-bundle/jdeploy.js"
+  },
+  "author": {
+    "name": "Matthias Seitz",
+    "email": "matthias.seitz@tum.com"
+  },
+  "description": "A bare starter template generator for a Siemens MindSphere project using the MindSphere SDK",
+  "main": "index.js",
+  "preferGlobal": true,
+  "repository": "https://github.com/MattsSe/msphere-starter",
+  "version": "0.1.0",
+  "jdeploy": {},
+  "dependencies": {
+    "shelljs": "^0.7.5"
+  },
+  "license": "ISC",
+  "name": "create-msphere",
+  "files": [
+    "jdeploy-bundle"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
