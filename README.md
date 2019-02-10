@@ -1,6 +1,9 @@
 # Mindsphere starter
-A bare starter template for the Mindsphere® java sdk with gradle
 
+A bare starter template for the Mindsphere® java sdk with gradle
+===================================================================
+
+[![Build Status](https://travis-ci.com/MattsSe/msphere-starter.svg?token=wvzBiyVtSvxDAnKkwQDD&branch=master)](https://travis-ci.com/MattsSe/msphere-starter)
 
 ## Installation
 
