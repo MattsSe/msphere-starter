@@ -10,9 +10,9 @@
   "main": "index.js",
   "preferGlobal": true,
   "repository": "https://github.com/MattsSe/msphere-starter",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "jdeploy": {
-    "jar": "create-msphere.jar"
+    "jar": "create-msphere-0.1.4.jar"
   },
   "dependencies": {
     "shelljs": "^0.7.5"
