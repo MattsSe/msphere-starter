@@ -62,7 +62,6 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("com.github.ajalt:clikt:1.6.0")
-    api("com.siemens.mindsphere:mindsphere-sdk-java-core:+")
     testCompile("junit", "junit", "4.12")
 }
 
