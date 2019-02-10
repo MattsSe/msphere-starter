@@ -1,2 +1,2 @@
-rootProject.name = 'msphere-starter'
+rootProject.name = "msphere-starter"
 
