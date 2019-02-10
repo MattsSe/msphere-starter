@@ -10,7 +10,7 @@ plugins {
 }
 
 group = "io.github.mattsse"
-version = "0.1.2"
+version = "0.1.4"
 
 application {
     applicationName = "create-msphere"
@@ -33,6 +33,7 @@ tasks.withType<KotlinCompile> {
 repositories {
     mavenCentral()
 }
+
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("com.github.ajalt:clikt:1.6.0")
@@ -41,7 +42,7 @@ dependencies {
 
 tasks {
 
-    val copyShadow by registering(ShadowJar::class) {
+    val copyShadow by registering(DefaultTask::class) {
         doLast {
             copy {
                 from("build/libs/create-msphere-${project.version}.jar")
@@ -51,7 +52,8 @@ tasks {
     }
 
     val build by tasks.existing {
-        dependsOn(copyShadow)
+        dependsOn(tasks["shadowJar"])
+        finalizedBy(copyShadow)
     }
 
 }

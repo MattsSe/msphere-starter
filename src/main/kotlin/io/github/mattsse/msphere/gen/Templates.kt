@@ -109,7 +109,7 @@ cache:
         override fun generate(target: File): File {
             val file = File(target, path().toString())
             if (!file.exists()) {
-                file.writeBytes(GradlewJar::class.java.getResource("/gradle-wrapper.jar").readBytes())
+                file.writeBytes(GradlewJar::class.java.getResource("/gradle-wrapper.jarx").readBytes())
             }
             return file
         }

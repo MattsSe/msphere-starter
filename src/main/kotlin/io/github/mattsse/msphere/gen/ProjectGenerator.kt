@@ -200,13 +200,16 @@ class ProjectGenerator(val config: Config) {
 
 
     /**
+     * @return the executable for gradle wrapper
+     */
+    fun gradlewExe() =
+        if (System.getProperty("os.name").toLowerCase().startsWith("windows")) "gradlew.bat" else "./gradlew"
+
+    /**
      * initializes the gradle wrapper
      */
-    fun initWrapper() {
-        val os = System.getProperty("os.name").toLowerCase()
-        val exe = if (os.startsWith("windows")) "gradlew.bat" else "./gradlew"
-        "$exe wrapper --gradle-version ${config.gradleVersion}".runCommand(config.dest)
-    }
+    fun initWrapper() =
+        "${gradlewExe()} wrapper --gradle-version ${config.gradleVersion}".runCommand(config.dest)
 
     /**
      * generates the gradle environment
@@ -220,7 +223,7 @@ class ProjectGenerator(val config: Config) {
         println("installing gradle wrapper...")
         initWrapper()
         println("downloading SDK...")
-        "gradlew getSDK".runCommand(config.dest)
+        "${gradlewExe()} getSDK".runCommand(config.dest)
 
     }
 
