@@ -11,11 +11,13 @@
   "preferGlobal": true,
   "repository": "https://github.com/MattsSe/msphere-starter",
   "version": "0.1.0",
-  "jdeploy": {},
+  "jdeploy": {
+    "jar": "create-msphere.jar"
+  },
   "dependencies": {
     "shelljs": "^0.7.5"
   },
-  "license": "ISC",
+  "license": "MIT",
   "name": "create-msphere",
   "files": [
     "jdeploy-bundle"
