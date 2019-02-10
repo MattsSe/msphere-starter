@@ -1,6 +1,6 @@
 {
   "bin": {
-    "npm-deploy": "jdeploy-bundle/jdeploy.js"
+    "create-msphere": "jdeploy-bundle/jdeploy.js"
   },
   "author": {
     "name": "Matthias Seitz",
@@ -10,14 +10,14 @@
   "main": "index.js",
   "preferGlobal": true,
   "repository": "https://github.com/MattsSe/msphere-starter",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "jdeploy": {
     "jar": "create-msphere.jar"
   },
   "dependencies": {
     "shelljs": "^0.7.5"
   },
-  "license": "MIT",
+  "license": "ISC",
   "name": "create-msphere",
   "files": [
     "jdeploy-bundle"
