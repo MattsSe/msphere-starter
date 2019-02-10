@@ -122,11 +122,6 @@ tasks {
     val build by tasks.existing {
         unzip()
         dependsOn(copyShadow)
-        repositories {
-            maven {
-                url = localMindSphereRepo()
-            }
-        }
     }
 
 }
