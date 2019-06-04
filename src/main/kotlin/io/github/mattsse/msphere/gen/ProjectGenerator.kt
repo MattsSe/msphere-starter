@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit
 object Consts {
     const val VERSION = "0.1.0"
     const val SDK_ENDPOINT =
-        "https://support.industry.siemens.com/dl/files/603/109757603/att_972175/v1/mindsphere-sdk-java-v2.1.0.zip?download=true"
+        "https://cache.industry.siemens.com/dl/files/603/109757603/att_983370/s1/mindsphere-sdk_2.2.0.zip?download=true"
 }
 
 /**
